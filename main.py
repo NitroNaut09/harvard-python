@@ -26,3 +26,8 @@ app()
 # For example, we can modify the values of the parameters of the print function as follows:
 
 print(1, 2, 3, sep='--')
+
+# IF we insist on using double quotes but still want to print quotes, we can use an escape character. For eg;
+
+print("I am \"fine\"")
+
