@@ -32,3 +32,8 @@ print(1, 2, 3, sep='--')
 print("I am \"fine\"")
 
 
+# Example code:
+
+    name = input("Enter your name: ")
+    name = name.strip().title()
+    print(name)
