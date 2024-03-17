@@ -15,7 +15,7 @@ app()
 # For print function:
 print(*objects, sep=" ", end="\n", file=sys.stdout, flush=False)
 
-"""  * means to multiply, and object means the string itself. Since there is no value for objects, it means that the print functions can take any number of strings.
+""" * means to multiply, and object means the string itself. Since there is no value for objects, it means that the print functions can take any number of strings.
 
 Separator is used to separate the objects in the string. The default value is ' ' (a space).
 
@@ -43,4 +43,38 @@ print(name)
 
 # Conditional Statements
 
-l.py
+
+def is_even(x):
+    return True if x % 2 == 0 else False
+
+
+# Even cleaner code:
+def even(n):
+    return n % 2 == 0
+
+
+# Match
+
+
+name = input("Who are you? ")
+if name in ["Harry Da Puttar", "Hermione", "Ron"]:
+    print("GRIFYYNDORRRRRRRRR!!!!!!")
+else:
+    print("I don't know you!")
+
+
+def sorting_hat(head):
+    if head == "Gryffindor":
+        return "Potter"
+    elif head == "Hufflepuff":
+        return "Snape"
+    elif head == "Ravenclaw":
+        return "Flitwick"
+    else:
+        return "Hagrid"
+
+
+sorting_hat("Ravenclaw")
+
+
+# Loops
