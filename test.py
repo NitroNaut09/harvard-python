@@ -1,26 +1,18 @@
-# TODO: At least 2 characters
-# Max 6 characters
-# First number can't be a 0, numbers only at the end
-# No periods, spaces, or punctuation marks are allowed
-
-
 def main():
-    plate = input("Plate: ").upper()
-    if is_valid(plate):
-        print("Valid")
-    else:
-        print("Invalid")
+    amount_due = 50
+    total_inserted = 0
+
+    while total_inserted < amount_due:
+        coin = int(input("Insert a coin (25, 10, or 5 cents): "))
+        if coin in [25, 10, 5]:
+            total_inserted += coin
+            print(f"Amount due: {amount_due - total_inserted} cents remaining")
+        else:
+            print("Invalid coin. Please insert 25, 10, or 5 cents.")
+
+    change = total_inserted - amount_due
+    print(f"You inserted enough coins. Your change is: {change} cents.")
 
 
-def is_valid(s):
-    if len(s) > 6 or len(s) < 2:
-        return False
-    if s[0] == "0":
-        return False
-    for i in range(len(s)):
-        if s[i].isalpha():
-            return False
-    return True
-
-
-main()
+if __name__ == "__main__":
+    main()
